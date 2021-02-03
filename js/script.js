@@ -13,7 +13,7 @@ async function handleSubmit(event) {
 	const formData = new FormData();
 
 	// check if there any files first
-	if (imagePicker.files[0].length === 0) {
+	if (imagePicker.files.length === 0) {
 		return alert("Select an image");
 	}
 
